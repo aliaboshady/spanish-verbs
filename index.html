@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Spanish Flashcard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="options">
+      <div class="answer-first">
+        Spanish First <input id="answer-first" type="checkbox" checked />
+      </div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="answer-first">
+        Translate <input id="translate" type="checkbox" checked />
+      </div>
+      <div class="mode">
+        <div class="words-mode">
+          <select name="real-words-type" id="real-words-type">
+            <option value="All">All</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="card" class="card">
+      <audio id="audioPlayer" class="audioPlayer" src="" controls></audio>
+      <div>
+        <div id="verb" class="verb">...</div>
+        <br />
+        <br />
+        <br />
+        <button class="button" onclick="PlayAudio()">Play</button>
+        <button class="button" onclick="StopAudio()">Stop</button>
+      </div>
+    </div>
+    <script defer src="main.js"></script>
+  </body>
+</html>
